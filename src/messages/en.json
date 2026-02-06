@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "title": "M3 Consultants | Human Resources Consulting Firm",
+    "description": "Human resources consulting firm based in Abidjan. Expertise in HR consulting, recruitment, professional training, and intellectual property."
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "team": "Our Team",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "home": {
+    "hero": {
+      "title": "We have the HR solutions",
+      "subtitle": "A specialized firm based in Abidjan, we support companies in their human capital development strategy.",
+      "cta_primary": "Our Services",
+      "cta_secondary": "Contact Us"
+    },
+    "philosophy": {
+      "quote": "Perfection is not attainable, but if we chase perfection, we can catch Excellence.",
+      "attribution": "Vince Lombardi",
+      "description": "At M3 Consultants, excellence is not a goal — it is our daily standard."
+    },
+    "services": {
+      "heading": "Our Areas of Expertise",
+      "subtitle": "Tailored solutions to transform your human capital.",
+      "hr_consulting": {
+        "title": "HR Consulting",
+        "description": "HR strategy, performance management, social policies, and change management support."
+      },
+      "recruitment": {
+        "title": "Recruitment",
+        "description": "Sourcing, screening, interviews, and psychometric testing to identify top talent."
+      },
+      "training": {
+        "title": "Professional Training",
+        "description": "Custom programs in leadership, personal development, and technical skills."
+      },
+      "ip_consulting": {
+        "title": "Intellectual Property",
+        "description": "Asset valuation, patents, trademarks, and IP litigation support."
+      },
+      "learn_more": "Learn more"
+    },
+    "stats": {
+      "since": "Since",
+      "since_year": "2021",
+      "clients": "Clients Served",
+      "missions": "Missions Completed",
+      "expertise": "Areas of Expertise"
+    },
+    "cta": {
+      "heading": "Let's transform your human capital together",
+      "description": "Ready to optimize your human resources? Our experts are here to develop solutions tailored to your challenges.",
+      "button": "Get in Touch"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "A firm founded by professionals from major international corporations."
+    },
+    "story": {
+      "heading": "Our Story",
+      "paragraph1": "Founded in 2021, M3 Consultants was born from the vision of seasoned professionals from major international corporations, determined to offer superior quality support in human resources.",
+      "paragraph2": "Based in Abidjan, we work with organizations of all sizes in Côte d'Ivoire and the sub-region, with operational expertise and a commitment to absolute confidentiality.",
+      "paragraph3": "Our approach combines methodological rigor with a deep understanding of local realities to guarantee lasting and measurable results."
+    },
+    "values": {
+      "heading": "Our Values",
+      "expertise": {
+        "title": "Operational Expertise",
+        "description": "A team of seasoned practitioners, drawing on their experience in international companies."
+      },
+      "confidentiality": {
+        "title": "Confidentiality",
+        "description": "An absolute commitment to discretion and the protection of our clients' information."
+      },
+      "responsibility": {
+        "title": "Social Responsibility",
+        "description": "A strong commitment to sustainable development and positive community impact."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "The constant pursuit of quality in every mission we undertake."
+      }
+    },
+    "timeline": {
+      "heading": "Our Journey",
+      "2021": {
+        "title": "Foundation",
+        "description": "Creation of M3 Consultants in Abidjan, Côte d'Ivoire."
+      },
+      "2022": {
+        "title": "Growth",
+        "description": "Expansion of our services and consolidation of our partner network."
+      },
+      "2023": {
+        "title": "Expansion",
+        "description": "Diversification of our offering with intellectual property expertise."
+      },
+      "2024": {
+        "title": "Reach",
+        "description": "Strengthening our presence in the West African sub-region."
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive and customized solutions for every dimension of your human resources."
+    },
+    "hr_consulting": {
+      "number": "01",
+      "title": "Human Resources Consulting",
+      "description": "We support companies in developing and implementing high-performing HR strategies aligned with their growth objectives.",
+      "sub_services": [
+        "HR audit and diagnosis",
+        "HR policy development",
+        "Performance management",
+        "Change management support",
+        "Compensation and benefits",
+        "Social relations and dialogue"
+      ]
+    },
+    "recruitment": {
+      "number": "02",
+      "title": "Recruitment",
+      "description": "Our rigorous approach to recruitment ensures the identification and selection of talent that perfectly matches your needs.",
+      "sub_services": [
+        "Sourcing and headhunting",
+        "Pre-screening and assessment",
+        "Structured interviews",
+        "Psychometric testing",
+        "Reference verification",
+        "New employee onboarding"
+      ]
+    },
+    "training": {
+      "number": "03",
+      "title": "Professional Training",
+      "description": "Custom training programs to develop your teams' skills and support their growth.",
+      "sub_services": [
+        "Leadership and management",
+        "Personal development",
+        "Technical skills",
+        "Communication and soft skills",
+        "Project management",
+        "Individual and group coaching"
+      ]
+    },
+    "ip_consulting": {
+      "number": "04",
+      "title": "Intellectual Property",
+      "description": "Specialized expertise to protect and enhance your intangible assets in an ever-changing regulatory environment.",
+      "sub_services": [
+        "Intellectual asset valuation",
+        "Patent and trademark filing",
+        "IP protection strategy",
+        "Litigation support",
+        "Regulatory monitoring",
+        "Industrial property consulting"
+      ]
+    },
+    "cta": {
+      "heading": "Have a specific need?",
+      "description": "Contact us to discuss your challenges and discover how our experts can support you.",
+      "button": "Contact Us"
+    }
+  },
+  "team": {
+    "hero": {
+      "title": "Our Team",
+      "subtitle": "Experienced professionals dedicated to your success."
+    },
+    "members": {
+      "mao": {
+        "name": "Dr. MAR Mao",
+        "title": "Chief of Mission / Managing Partner",
+        "bio": "Doctor of Business Law (University of Toulouse), graduate of the DESCARTES program and holder of the UMOA Administrators Certificate, Dr. MAR Mao brings unique expertise in business law and human resources management.",
+        "credentials": [
+          "Doctorate in Business Law — University of Toulouse",
+          "DESCARTES Program",
+          "UMOA Administrators Certificate"
+        ],
+        "expertise": [
+          "Business Law",
+          "HR Management",
+          "Intellectual Property",
+          "Training"
+        ]
+      },
+      "kader": {
+        "name": "MAR Mamadou-Kader",
+        "title": "Project Manager",
+        "bio": "Holder of a BBA in IT Management (University of Houston) and an AA (Howard Community College), MAR Mamadou-Kader combines technological skills with strategic vision.",
+        "credentials": [
+          "BBA in IT Management — University of Houston",
+          "AA — Howard Community College"
+        ],
+        "expertise": [
+          "IT Management",
+          "Project Management",
+          "Digital Strategy",
+          "Innovation"
+        ]
+      }
+    },
+    "experts": {
+      "title": "Expert Network",
+      "description": "M3 Consultants relies on a network of specialized experts and partner firms to handle large-scale missions with the highest quality of service."
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Insights and reflections on human resources, recruitment, and management."
+    },
+    "categories": {
+      "all": "All",
+      "hr": "HR",
+      "recruitment": "Recruitment",
+      "training": "Training",
+      "ip": "IP"
+    },
+    "read_more": "Read more",
+    "reading_time": "min read",
+    "no_posts": "No articles yet. Check back soon!",
+    "sample_posts": {
+      "post1": {
+        "title": "HR Trends in West Africa for 2025",
+        "excerpt": "Discover the major trends transforming human resources management in the sub-region.",
+        "category": "hr",
+        "date": "2025-01-15"
+      },
+      "post2": {
+        "title": "Mastering Your Recruitment Process",
+        "excerpt": "Key steps to attract and select top talent in a competitive market.",
+        "category": "recruitment",
+        "date": "2025-01-08"
+      },
+      "post3": {
+        "title": "The Importance of Continuous Training",
+        "excerpt": "How investing in skills development can boost your team's productivity.",
+        "category": "training",
+        "date": "2024-12-20"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Ready to transform your human resources management? Let's talk."
+    },
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "subject": "Subject",
+      "subject_options": {
+        "hr": "HR Consulting",
+        "recruitment": "Recruitment",
+        "training": "Training",
+        "ip": "Intellectual Property",
+        "other": "Other"
+      },
+      "message": "Your message",
+      "submit": "Send",
+      "success": "Thank you! Your message has been sent successfully. We will respond as soon as possible.",
+      "error": "An error occurred. Please try again."
+    },
+    "info": {
+      "heading": "Our Contact Information",
+      "address_label": "Address",
+      "phone_label": "Phone",
+      "email_label": "Email",
+      "hours_label": "Hours",
+      "hours_value": "Monday - Friday: 8:00 AM - 6:00 PM"
+    }
+  },
+  "footer": {
+    "description": "Human resources consulting firm based in Abidjan, specialized in HR consulting, recruitment, training, and intellectual property.",
+    "quick_links": "Quick Links",
+    "contact_us": "Contact Us",
+    "newsletter": {
+      "heading": "Stay Informed",
+      "placeholder": "Your email",
+      "button": "Subscribe"
+    },
+    "copyright": "© {year} M3 Consultants. All rights reserved."
+  },
+  "common": {
+    "read_more": "Read more",
+    "learn_more": "Learn more",
+    "send": "Send",
+    "back": "Back",
+    "loading": "Loading..."
+  }
+}

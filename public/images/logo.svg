@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="m3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF0AA3"/>
+      <stop offset="50%" stop-color="#A325D4"/>
+      <stop offset="100%" stop-color="#20B2FF"/>
+    </linearGradient>
+  </defs>
+  <!-- M shape with gradient -->
+  <path d="M5 48V12h8l12 22 12-22h8v36h-7V22l-10.5 19h-5L12 22v26H5z" fill="url(#m3-gradient)"/>
+  <!-- 3 shape with gradient -->
+  <path d="M55 12h20c4 0 7 1.5 9 4s3 5.5 3 9c0 2.5-.7 4.7-2 6.5 2 2 3 4.5 3 7.5 0 3.5-1.2 6.5-3.5 9S79 52 75 52H55V45h19c2 0 3.5-.7 4.5-2s1.5-3 1.5-5-0.5-3.5-1.5-4.5S76.5 32 74.5 32H60v-7h14c1.5 0 2.8-.6 3.8-1.8s1.5-2.7 1.5-4.2c0-1.8-.5-3.2-1.5-4.2S75.5 13 74 13H55v-1z" fill="url(#m3-gradient)"/>
+  <!-- CONSULTANTS text -->
+  <text x="95" y="50" font-family="Inter, Helvetica, Arial, sans-serif" font-size="8" font-weight="600" letter-spacing="3" fill="currentColor">CONSULTANTS</text>
+</svg>

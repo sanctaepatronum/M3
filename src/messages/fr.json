@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "title": "M3 Consultants | Cabinet de Conseil en Ressources Humaines",
+    "description": "Cabinet de conseil en ressources humaines basé à Abidjan. Expertise en conseil RH, recrutement, formation professionnelle et propriété intellectuelle."
+  },
+  "nav": {
+    "about": "À Propos",
+    "services": "Nos Services",
+    "team": "Notre Équipe",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cta": "Nous Contacter"
+  },
+  "home": {
+    "hero": {
+      "title": "Nous avons les solutions RH",
+      "subtitle": "Cabinet spécialisé basé à Abidjan, nous accompagnons les entreprises dans leur stratégie de développement du capital humain.",
+      "cta_primary": "Nos Services",
+      "cta_secondary": "Contactez-nous"
+    },
+    "philosophy": {
+      "quote": "La perfection n'est pas atteignable, mais si nous poursuivons la perfection, nous pouvons atteindre l'Excellence.",
+      "attribution": "Vince Lombardi",
+      "description": "Chez M3 Consultants, l'excellence n'est pas un objectif — c'est notre standard quotidien."
+    },
+    "services": {
+      "heading": "Nos Domaines d'Expertise",
+      "subtitle": "Des solutions sur mesure pour transformer votre capital humain.",
+      "hr_consulting": {
+        "title": "Conseil RH",
+        "description": "Stratégie RH, gestion de la performance, politiques sociales et accompagnement au changement."
+      },
+      "recruitment": {
+        "title": "Recrutement",
+        "description": "Sourcing, présélection, entretiens et tests psychométriques pour identifier les meilleurs talents."
+      },
+      "training": {
+        "title": "Formation Professionnelle",
+        "description": "Programmes sur mesure en leadership, développement personnel et compétences techniques."
+      },
+      "ip_consulting": {
+        "title": "Propriété Intellectuelle",
+        "description": "Évaluation d'actifs, brevets, marques et accompagnement en contentieux de PI."
+      },
+      "learn_more": "En savoir plus"
+    },
+    "stats": {
+      "since": "Depuis",
+      "since_year": "2021",
+      "clients": "Clients Accompagnés",
+      "missions": "Missions Réalisées",
+      "expertise": "Domaines d'Expertise"
+    },
+    "cta": {
+      "heading": "Transformons ensemble votre capital humain",
+      "description": "Prêt à optimiser vos ressources humaines ? Nos experts sont à votre écoute pour élaborer des solutions adaptées à vos enjeux.",
+      "button": "Prenez Contact"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "À Propos",
+      "subtitle": "Un cabinet fondé par des professionnels issus de grandes entreprises internationales."
+    },
+    "story": {
+      "heading": "Notre Histoire",
+      "paragraph1": "Fondé en 2021, M3 Consultants est né de la vision de professionnels chevronnés issus de grandes entreprises internationales, déterminés à offrir un accompagnement de qualité supérieure en matière de ressources humaines.",
+      "paragraph2": "Basés à Abidjan, nous intervenons auprès d'organisations de toutes tailles en Côte d'Ivoire et dans la sous-région, avec une expertise opérationnelle et un engagement envers la confidentialité absolue.",
+      "paragraph3": "Notre approche allie rigueur méthodologique et compréhension approfondie des réalités locales pour garantir des résultats durables et mesurables."
+    },
+    "values": {
+      "heading": "Nos Valeurs",
+      "expertise": {
+        "title": "Expertise Opérationnelle",
+        "description": "Une équipe de praticiens aguerris, forts de leur expérience en entreprises internationales."
+      },
+      "confidentiality": {
+        "title": "Confidentialité",
+        "description": "Un engagement absolu envers la discrétion et la protection des informations de nos clients."
+      },
+      "responsibility": {
+        "title": "Responsabilité Sociale",
+        "description": "Un engagement fort envers le développement durable et l'impact positif sur les communautés."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "La recherche constante de la qualité dans chaque mission que nous entreprenons."
+      }
+    },
+    "timeline": {
+      "heading": "Notre Parcours",
+      "2021": {
+        "title": "Fondation",
+        "description": "Création de M3 Consultants à Abidjan, Côte d'Ivoire."
+      },
+      "2022": {
+        "title": "Croissance",
+        "description": "Extension de nos services et consolidation de notre réseau de partenaires."
+      },
+      "2023": {
+        "title": "Expansion",
+        "description": "Diversification de notre offre avec l'expertise en propriété intellectuelle."
+      },
+      "2024": {
+        "title": "Rayonnement",
+        "description": "Renforcement de notre présence dans la sous-région ouest-africaine."
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Nos Services",
+      "subtitle": "Des solutions complètes et personnalisées pour chaque dimension de vos ressources humaines."
+    },
+    "hr_consulting": {
+      "number": "01",
+      "title": "Conseil en Ressources Humaines",
+      "description": "Nous accompagnons les entreprises dans l'élaboration et la mise en œuvre de stratégies RH performantes, alignées sur leurs objectifs de croissance.",
+      "sub_services": [
+        "Audit et diagnostic RH",
+        "Élaboration de politiques RH",
+        "Gestion de la performance",
+        "Accompagnement au changement",
+        "Rémunération et avantages sociaux",
+        "Relations sociales et dialogue social"
+      ]
+    },
+    "recruitment": {
+      "number": "02",
+      "title": "Recrutement",
+      "description": "Notre approche rigoureuse du recrutement garantit l'identification et la sélection des talents qui correspondent parfaitement à vos besoins.",
+      "sub_services": [
+        "Sourcing et chasse de têtes",
+        "Présélection et évaluation",
+        "Entretiens structurés",
+        "Tests psychométriques",
+        "Vérification des références",
+        "Intégration des nouveaux collaborateurs"
+      ]
+    },
+    "training": {
+      "number": "03",
+      "title": "Formation Professionnelle",
+      "description": "Des programmes de formation sur mesure pour développer les compétences de vos équipes et accompagner leur montée en puissance.",
+      "sub_services": [
+        "Leadership et management",
+        "Développement personnel",
+        "Compétences techniques",
+        "Communication et soft skills",
+        "Gestion de projet",
+        "Coaching individuel et collectif"
+      ]
+    },
+    "ip_consulting": {
+      "number": "04",
+      "title": "Propriété Intellectuelle",
+      "description": "Une expertise spécialisée pour protéger et valoriser vos actifs immatériels dans un environnement réglementaire en constante évolution.",
+      "sub_services": [
+        "Évaluation d'actifs intellectuels",
+        "Dépôt de brevets et marques",
+        "Stratégie de protection PI",
+        "Accompagnement en contentieux",
+        "Veille réglementaire",
+        "Conseil en propriété industrielle"
+      ]
+    },
+    "cta": {
+      "heading": "Un besoin spécifique ?",
+      "description": "Contactez-nous pour discuter de vos enjeux et découvrir comment nos experts peuvent vous accompagner.",
+      "button": "Contactez-nous"
+    }
+  },
+  "team": {
+    "hero": {
+      "title": "Notre Équipe",
+      "subtitle": "Des professionnels expérimentés au service de votre réussite."
+    },
+    "members": {
+      "mao": {
+        "name": "Dr. MAR Mao",
+        "title": "Chef de Mission / Associé-Gérant",
+        "bio": "Docteur en Droit des Affaires (Université de Toulouse), diplômé du programme DESCARTES et titulaire du Certificat d'Administrateurs de l'UMOA, Dr. MAR Mao apporte une expertise unique en droit des affaires et en gestion des ressources humaines.",
+        "credentials": [
+          "Doctorat en Droit des Affaires — Université de Toulouse",
+          "Programme DESCARTES",
+          "Certificat d'Administrateurs UMOA"
+        ],
+        "expertise": [
+          "Droit des Affaires",
+          "Gestion RH",
+          "Propriété Intellectuelle",
+          "Formation"
+        ]
+      },
+      "kader": {
+        "name": "MAR Mamadou-Kader",
+        "title": "Chef de Projet",
+        "bio": "Titulaire d'un BBA en Management des Technologies de l'Information (University of Houston) et d'un AA (Howard Community College), MAR Mamadou-Kader allie compétences technologiques et vision stratégique.",
+        "credentials": [
+          "BBA en Management IT — University of Houston",
+          "AA — Howard Community College"
+        ],
+        "expertise": [
+          "Management IT",
+          "Gestion de Projet",
+          "Stratégie Digitale",
+          "Innovation"
+        ]
+      }
+    },
+    "experts": {
+      "title": "Réseau d'Experts",
+      "description": "M3 Consultants s'appuie sur un réseau d'experts spécialisés et de cabinets partenaires pour répondre aux missions de grande envergure avec la plus haute qualité de service."
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Insights et réflexions sur les ressources humaines, le recrutement et le management."
+    },
+    "categories": {
+      "all": "Tous",
+      "hr": "RH",
+      "recruitment": "Recrutement",
+      "training": "Formation",
+      "ip": "PI"
+    },
+    "read_more": "Lire la suite",
+    "reading_time": "min de lecture",
+    "no_posts": "Aucun article pour le moment. Revenez bientôt !",
+    "sample_posts": {
+      "post1": {
+        "title": "Les Tendances RH en Afrique de l'Ouest pour 2025",
+        "excerpt": "Découvrez les grandes tendances qui transforment la gestion des ressources humaines dans la sous-région.",
+        "category": "hr",
+        "date": "2025-01-15"
+      },
+      "post2": {
+        "title": "Réussir son Processus de Recrutement",
+        "excerpt": "Les étapes clés pour attirer et sélectionner les meilleurs talents dans un marché compétitif.",
+        "category": "recruitment",
+        "date": "2025-01-08"
+      },
+      "post3": {
+        "title": "L'Importance de la Formation Continue",
+        "excerpt": "Comment investir dans le développement des compétences pour accroître la productivité de vos équipes.",
+        "category": "training",
+        "date": "2024-12-20"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contactez-nous",
+      "subtitle": "Prêt à transformer votre gestion des ressources humaines ? Parlons-en."
+    },
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "phone": "Téléphone",
+      "subject": "Sujet",
+      "subject_options": {
+        "hr": "Conseil RH",
+        "recruitment": "Recrutement",
+        "training": "Formation",
+        "ip": "Propriété Intellectuelle",
+        "other": "Autre"
+      },
+      "message": "Votre message",
+      "submit": "Envoyer",
+      "success": "Merci ! Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "info": {
+      "heading": "Nos Coordonnées",
+      "address_label": "Adresse",
+      "phone_label": "Téléphone",
+      "email_label": "Email",
+      "hours_label": "Horaires",
+      "hours_value": "Lundi - Vendredi : 8h00 - 18h00"
+    }
+  },
+  "footer": {
+    "description": "Cabinet de conseil en ressources humaines basé à Abidjan, spécialisé en conseil RH, recrutement, formation et propriété intellectuelle.",
+    "quick_links": "Liens Rapides",
+    "contact_us": "Contactez-nous",
+    "newsletter": {
+      "heading": "Restez Informé",
+      "placeholder": "Votre email",
+      "button": "S'abonner"
+    },
+    "copyright": "© {year} M3 Consultants. Tous droits réservés."
+  },
+  "common": {
+    "read_more": "Lire la suite",
+    "learn_more": "En savoir plus",
+    "send": "Envoyer",
+    "back": "Retour",
+    "loading": "Chargement..."
+  }
+}
