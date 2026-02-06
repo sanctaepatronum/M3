@@ -1,10 +1,11 @@
 import { notFound } from "next/navigation";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/ui/ScrollProgress";
+import ClientCursorWrapper from "@/components/ui/ClientCursorWrapper";
 
 type Props = {
   children: React.ReactNode;
@@ -53,6 +54,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div className="grain-overlay">
+        <ClientCursorWrapper />
         <ScrollProgress />
         <Header />
         <main>{children}</main>

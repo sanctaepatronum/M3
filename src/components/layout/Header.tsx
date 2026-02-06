@@ -40,7 +40,7 @@ export default function Header() {
         className={cn(
           "fixed top-0 right-0 left-0 z-50 transition-colors duration-500",
           isScrolled
-            ? "bg-primary/95 shadow-lg backdrop-blur-md"
+            ? "bg-primary/95 border-b border-champagne/10 backdrop-blur-md"
             : "bg-transparent"
         )}
       >
@@ -57,11 +57,11 @@ export default function Header() {
                 key={link.key}
                 href={link.href}
                 className={cn(
-                  "relative text-[15px] font-medium tracking-wide uppercase transition-colors duration-300",
+                  "relative text-[15px] font-medium tracking-[0.15em] uppercase transition-colors duration-300",
                   isScrolled
                     ? "text-neutral-200 hover:text-white"
                     : "text-neutral-200 hover:text-white",
-                  "after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
+                  "after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 after:bg-champagne after:transition-all after:duration-300 hover:after:w-full"
                 )}
               >
                 {t(link.key)}
@@ -83,7 +83,7 @@ export default function Header() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="text-white transition-colors hover:text-accent-light lg:hidden"
+              className="text-white transition-colors hover:text-champagne lg:hidden"
               aria-label="Open menu"
             >
               <Menu size={28} />

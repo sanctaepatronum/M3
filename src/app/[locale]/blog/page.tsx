@@ -22,9 +22,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative flex min-h-[50vh] items-center overflow-hidden bg-primary">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light/20 to-primary" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-magenta)_0%,_transparent_60%)] opacity-[0.06]" />
+      <section className="relative flex min-h-[50vh] items-center overflow-hidden bg-mesh-dark">
         <Container className="relative z-10 py-32 text-center">
           <TextReveal
             text={t("hero.title")}
@@ -39,7 +37,7 @@ export default function BlogPage() {
         </Container>
       </section>
 
-      <SectionDivider variant="curve" from="fill-primary" to="fill-neutral-50" />
+      <SectionDivider />
 
       {/* Blog Content */}
       <section className="bg-neutral-50 py-24 lg:py-32">
@@ -55,14 +53,14 @@ export default function BlogPage() {
                 {activeCategory === cat && (
                   <motion.div
                     layoutId="activeFilter"
-                    className="absolute inset-0 rounded-full bg-gradient-to-r from-magenta to-accent"
+                    className="absolute inset-0 rounded-full border border-magenta/40 bg-primary"
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
                 )}
                 <span
                   className={`relative z-10 ${
                     activeCategory === cat
-                      ? "text-white"
+                      ? "text-magenta"
                       : "text-neutral-400 hover:text-neutral-900"
                   }`}
                 >
@@ -96,7 +94,7 @@ export default function BlogPage() {
                   <div className="aspect-[16/10] bg-neutral-200/50" />
 
                   <div className="p-6">
-                    <span className="inline-block rounded-full bg-terracotta/10 px-3 py-1 text-xs font-medium text-terracotta">
+                    <span className="inline-block rounded-full bg-magenta/10 px-3 py-1 text-xs font-medium text-magenta">
                       {t(`categories.${category}`)}
                     </span>
 
@@ -113,7 +111,7 @@ export default function BlogPage() {
                         <Clock size={12} />
                         {t(`sample_posts.${postKey}.date`)}
                       </span>
-                      <span className="inline-flex items-center gap-1 text-sm font-medium text-accent transition-colors hover:text-accent-light">
+                      <span className="inline-flex items-center gap-1 text-sm font-medium text-champagne transition-colors hover:text-accent">
                         {t("read_more")}
                         <ArrowRight
                           size={14}

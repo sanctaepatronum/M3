@@ -31,9 +31,9 @@ export default function ValuesSection() {
               <motion.div
                 key={value.key}
                 variants={staggerItemVariants}
-                className="group rounded-sm border border-neutral-200 bg-white p-8 transition-all duration-300 hover:border-accent/30 hover:shadow-lg"
+                className="group border-l-2 border-champagne/20 py-6 pl-8 transition-all duration-300 hover:border-magenta"
               >
-                <div className="mb-4 inline-flex text-accent">
+                <div className="mb-4 inline-flex text-champagne">
                   <Icon size={28} strokeWidth={1.5} />
                 </div>
                 <h3 className="font-heading text-xl font-semibold text-neutral-900">

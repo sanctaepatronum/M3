@@ -43,13 +43,13 @@ export default function SectionHeading({
         {title}
       </motion.h2>
 
-      {/* Gradient underline */}
+      {/* Champagne accent line */}
       <motion.div
         initial={{ scaleX: 0 }}
         animate={isInView ? { scaleX: 1 } : {}}
-        transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 1.0, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         className={cn(
-          "mt-4 h-[3px] w-16 origin-left bg-gradient-to-r from-magenta to-accent",
+          "mt-4 h-px w-24 origin-left bg-gradient-to-r from-champagne to-transparent",
           align === "center" && "mx-auto"
         )}
       />

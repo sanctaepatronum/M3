@@ -9,12 +9,12 @@ export default function CTASection() {
   const t = useTranslations("home.cta");
 
   return (
-    <section className="bg-neutral-100 py-24 lg:py-32">
+    <section className="bg-mesh-dark py-24 lg:py-32">
       <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.4fr_0.6fr] lg:gap-20">
           {/* Left: Statement text */}
           <SlideIn from="left">
-            <h2 className="font-heading text-3xl font-bold leading-tight text-neutral-900 sm:text-4xl lg:text-[2.75rem]">
+            <h2 className="font-heading text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-[2.75rem]">
               {t("heading")}
             </h2>
           </SlideIn>
@@ -26,7 +26,7 @@ export default function CTASection() {
                 {t("description")}
               </p>
               <div className="mt-8">
-                <Button href="/contact" variant="primary" size="lg">
+                <Button href="/contact" variant="outline" size="lg">
                   {t("button")}
                 </Button>
               </div>

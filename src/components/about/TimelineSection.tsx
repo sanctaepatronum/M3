@@ -29,7 +29,7 @@ export default function TimelineSection() {
           {/* Animated gold line */}
           <motion.div
             style={{ height: lineHeight }}
-            className="absolute left-6 top-0 w-[2px] bg-accent md:left-1/2 md:-translate-x-1/2"
+            className="absolute left-6 top-0 w-[2px] bg-gradient-to-b from-magenta to-accent md:left-1/2 md:-translate-x-1/2"
           />
 
           {/* Timeline entries */}
@@ -79,7 +79,7 @@ function TimelineEntry({
         initial={{ scale: 0 }}
         animate={isInView ? { scale: 1 } : {}}
         transition={{ duration: 0.4, delay: index * 0.1 }}
-        className="absolute left-[18px] top-1 h-5 w-5 rounded-full border-[3px] border-accent bg-neutral-50 md:left-1/2 md:-translate-x-1/2"
+        className="absolute left-[18px] top-1 h-5 w-5 rounded-full border-[3px] border-champagne bg-neutral-50 md:left-1/2 md:-translate-x-1/2"
       />
 
       {/* Content */}
@@ -91,7 +91,7 @@ function TimelineEntry({
           isLeft ? "md:text-right md:pr-12" : "md:text-left md:pl-12"
         }`}
       >
-        <span className="font-heading text-3xl font-bold text-accent">
+        <span className="font-heading text-3xl font-bold text-champagne">
           {year}
         </span>
         <h3 className="mt-1 font-heading text-xl font-semibold text-neutral-900">

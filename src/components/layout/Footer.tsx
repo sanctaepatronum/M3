@@ -12,7 +12,7 @@ export default function Footer() {
   const navT = useTranslations("nav");
 
   return (
-    <footer className="bg-primary text-neutral-200">
+    <footer className="bg-mesh-dark text-neutral-200">
       <Container className="py-16 lg:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
@@ -35,7 +35,7 @@ export default function Footer() {
                 <li key={link.key}>
                   <Link
                     href={link.href}
-                    className="text-sm text-neutral-400 transition-colors duration-300 hover:text-accent-light"
+                    className="text-sm text-neutral-400 transition-colors duration-300 hover:text-champagne"
                   >
                     {navT(link.key)}
                   </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin size={16} className="mt-0.5 shrink-0 text-accent" />
+                <MapPin size={16} className="mt-0.5 shrink-0 text-champagne" />
                 <span className="text-sm text-neutral-400">
                   {SITE_CONFIG.address.street}
                   <br />
@@ -59,13 +59,13 @@ export default function Footer() {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Phone size={16} className="mt-0.5 shrink-0 text-accent" />
+                <Phone size={16} className="mt-0.5 shrink-0 text-champagne" />
                 <div className="space-y-1">
                   {SITE_CONFIG.phones.map((phone) => (
                     <a
                       key={phone}
                       href={`tel:${phone.replace(/\s/g, "")}`}
-                      className="block text-sm text-neutral-400 transition-colors hover:text-accent-light"
+                      className="block text-sm text-neutral-400 transition-colors hover:text-champagne"
                     >
                       {phone}
                     </a>
@@ -73,13 +73,13 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail size={16} className="mt-0.5 shrink-0 text-accent" />
+                <Mail size={16} className="mt-0.5 shrink-0 text-champagne" />
                 <div className="space-y-1">
                   {SITE_CONFIG.emails.map((email) => (
                     <a
                       key={email}
                       href={`mailto:${email}`}
-                      className="block text-sm text-neutral-400 transition-colors hover:text-accent-light"
+                      className="block text-sm text-neutral-400 transition-colors hover:text-champagne"
                     >
                       {email}
                     </a>
@@ -101,11 +101,11 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder={t("newsletter.placeholder")}
-                className="rounded-sm border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-neutral-400 focus:border-accent focus:ring-0"
+                className="rounded-sm border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-neutral-400 focus:border-champagne focus:ring-0"
               />
               <button
                 type="submit"
-                className="rounded-sm bg-gradient-to-r from-magenta to-accent px-4 py-2.5 text-sm font-semibold text-white transition-all hover:opacity-90"
+                className="rounded-sm bg-champagne px-4 py-2.5 text-sm font-semibold tracking-[0.1em] uppercase text-primary transition-all hover:bg-champagne-light"
               >
                 {t("newsletter.button")}
               </button>
@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 border-t border-white/10 pt-8 text-center">
+        <div className="mt-12 border-t border-champagne/10 pt-8 text-center">
           <p className="text-sm text-neutral-400">
             {t("copyright", { year: new Date().getFullYear() })}
           </p>

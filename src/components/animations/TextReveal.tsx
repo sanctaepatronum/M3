@@ -17,7 +17,7 @@ export default function TextReveal({
   as: Component = "h1",
   className,
   delay = 0,
-  staggerDelay = 0.08,
+  staggerDelay = 0.06,
 }: TextRevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -37,7 +37,7 @@ export default function TextReveal({
             initial={{ y: "100%", opacity: 0 }}
             animate={isInView ? { y: "0%", opacity: 1 } : {}}
             transition={{
-              duration: 0.5,
+              duration: 0.65,
               delay: delay + i * staggerDelay,
               ease: [0.16, 1, 0.3, 1],
             }}

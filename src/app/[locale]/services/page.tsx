@@ -31,9 +31,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative flex min-h-[50vh] items-center overflow-hidden bg-primary">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light/20 to-primary" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-magenta)_0%,_transparent_60%)] opacity-[0.06]" />
+      <section className="relative flex min-h-[50vh] items-center overflow-hidden bg-mesh-dark">
         <Container className="relative z-10 py-32 text-center">
           <TextReveal
             text={t("hero.title")}
@@ -48,7 +46,7 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      <SectionDivider variant="curve" from="fill-primary" to="fill-neutral-50" />
+      <SectionDivider />
 
       {/* Service Detail Sections */}
       {serviceKeys.map((key, i) => {
@@ -65,13 +63,13 @@ export default function ServicesPage() {
                 {/* Content Side */}
                 <SlideIn from={isEven ? "left" : "right"}>
                   <div className={!isEven ? "lg:[direction:ltr]" : ""}>
-                    <span className="font-heading text-6xl font-bold text-accent/20">
+                    <span className="font-heading text-6xl font-bold text-champagne/15">
                       {t(`${key}.number`)}
                     </span>
                     <h2 className="mt-2 font-heading text-3xl font-bold text-neutral-900">
                       {t(`${key}.title`)}
                     </h2>
-                    <div className="mt-3 h-[3px] w-16 bg-gradient-to-r from-magenta to-accent" />
+                    <div className="mt-3 h-px w-16 bg-gradient-to-r from-champagne to-transparent" />
                     <p className="mt-6 text-lg leading-relaxed text-neutral-700">
                       {t(`${key}.description`)}
                     </p>
@@ -87,7 +85,7 @@ export default function ServicesPage() {
                 >
                   <div className={`relative ${!isEven ? "lg:[direction:ltr]" : ""}`}>
                     <div className="aspect-[4/3] rounded-sm bg-neutral-200/50" />
-                    <div className="absolute -bottom-4 -right-4 h-full w-full rounded-sm border-2 border-accent/10" />
+                    <div className="absolute -bottom-4 -right-4 h-full w-full rounded-sm border-2 border-champagne/10" />
                   </div>
                 </SlideIn>
               </div>
@@ -132,7 +130,7 @@ function ServiceSubList({
     <div className="mt-6">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-accent-light"
+        className="inline-flex items-center gap-2 text-sm font-medium text-champagne transition-colors hover:text-magenta"
       >
         {isOpen ? "Masquer les détails" : "Voir les détails"}
         <motion.span
@@ -152,7 +150,7 @@ function ServiceSubList({
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="overflow-hidden"
           >
-            <div className="mt-4 space-y-2 border-l-2 border-accent/20 pl-4">
+            <div className="mt-4 space-y-2 border-l-2 border-champagne/20 pl-4">
               {subServices.map((item: string, j: number) => (
                 <li key={j} className="text-sm text-neutral-400">
                   {item}

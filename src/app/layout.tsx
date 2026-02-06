@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { playfair, inter, cormorant } from "@/lib/fonts";
+import { dmSerif, outfit, cormorant } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <body
-        className={`${playfair.variable} ${inter.variable} ${cormorant.variable} antialiased`}
+        className={`${dmSerif.variable} ${outfit.variable} ${cormorant.variable} antialiased`}
       >
         {children}
       </body>

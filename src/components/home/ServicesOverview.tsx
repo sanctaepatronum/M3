@@ -27,7 +27,7 @@ export default function ServicesOverview() {
   const t = useTranslations("home.services");
 
   return (
-    <section className="bg-neutral-50 py-24 lg:py-32">
+    <section className="bg-mesh-light py-24 lg:py-32">
       <Container>
         <SectionHeading title={t("heading")} subtitle={t("subtitle")} />
 
@@ -38,11 +38,11 @@ export default function ServicesOverview() {
               <motion.div
                 key={service.key}
                 variants={staggerItemVariants}
-                whileHover={{ y: -8 }}
+                whileHover={{ y: -4 }}
                 transition={{ duration: 0.3 }}
-                className="group rounded-sm border border-neutral-200 bg-white p-8 transition-shadow duration-300 hover:shadow-xl"
+                className="group border-l-2 border-champagne/20 py-6 pl-8 transition-all duration-300 hover:border-magenta"
               >
-                <div className="mb-5 inline-flex rounded-sm bg-accent/10 p-3 text-accent transition-colors duration-300 group-hover:bg-accent group-hover:text-white">
+                <div className="mb-5 text-champagne transition-colors duration-300 group-hover:text-accent">
                   <Icon size={24} strokeWidth={1.5} />
                 </div>
 
@@ -56,7 +56,7 @@ export default function ServicesOverview() {
 
                 <Link
                   href="/services"
-                  className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-accent-light"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-champagne transition-colors hover:text-magenta"
                 >
                   {t("learn_more")}
                   <ArrowRight

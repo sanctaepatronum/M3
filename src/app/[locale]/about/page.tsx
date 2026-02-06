@@ -13,9 +13,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative flex min-h-[50vh] items-center overflow-hidden bg-primary">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light/20 to-primary" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-magenta)_0%,_transparent_60%)] opacity-[0.06]" />
+      <section className="relative flex min-h-[50vh] items-center overflow-hidden bg-mesh-dark">
         <Container className="relative z-10 py-32 text-center">
           <TextReveal
             text={t("title")}
@@ -30,10 +28,10 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <SectionDivider variant="curve" from="fill-primary" to="fill-neutral-50" />
+      <SectionDivider />
       <StorySection />
       <ValuesSection />
-      <SectionDivider variant="wave" from="fill-neutral-100" to="fill-neutral-50" />
+      <SectionDivider />
       <TimelineSection />
     </>
   );

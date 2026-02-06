@@ -43,7 +43,7 @@ export default function Logo({ className, light = true }: LogoProps) {
       </svg>
       <span
         className={cn(
-          "hidden text-[11px] font-semibold tracking-[0.2em] uppercase sm:block",
+          "hidden text-[10px] font-light tracking-[0.3em] uppercase sm:block",
           textColor
         )}
       >

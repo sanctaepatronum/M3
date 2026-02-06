@@ -34,7 +34,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 30, stiffness: 300 }}
-            className="fixed top-0 right-0 bottom-0 z-50 flex w-80 flex-col bg-primary p-8"
+            className="fixed top-0 right-0 bottom-0 z-50 flex w-80 flex-col bg-mesh-dark p-8"
           >
             {/* Close button */}
             <button
@@ -57,7 +57,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   <Link
                     href={link.href}
                     onClick={onClose}
-                    className="block py-3 font-heading text-2xl font-semibold text-neutral-200 transition-colors hover:text-accent-light"
+                    className="block py-3 font-heading text-2xl font-semibold text-neutral-200 transition-colors hover:text-champagne"
                   >
                     {t(link.key)}
                   </Link>
@@ -70,7 +70,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="mt-8 border-t border-white/10 pt-6"
+              className="mt-8 border-t border-champagne/10 pt-6"
             >
               <LanguageSwitcher light />
             </motion.div>

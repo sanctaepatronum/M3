@@ -9,24 +9,12 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <SectionDivider
-        variant="curve"
-        from="fill-primary"
-        to="fill-neutral-100"
-      />
+      <SectionDivider />
       <PhilosophySection />
-      <SectionDivider
-        variant="wave"
-        from="fill-neutral-100"
-        to="fill-neutral-50"
-      />
+      <SectionDivider />
       <ServicesOverview />
       <StatsSection />
-      <SectionDivider
-        variant="curve"
-        from="fill-primary"
-        to="fill-neutral-100"
-      />
+      <SectionDivider />
       <CTASection />
     </>
   );

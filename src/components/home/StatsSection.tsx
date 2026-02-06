@@ -19,19 +19,20 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="relative bg-primary py-20 lg:py-28">
-      {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-primary-light)_0%,_transparent_70%)] opacity-30" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_var(--color-magenta)_0%,_transparent_50%)] opacity-[0.05]" />
-
+    <section className="relative bg-mesh-dark py-20 lg:py-28">
       <Container className="relative z-10">
         <StaggerChildren className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-12">
           {stats.map((stat, i) => (
             <motion.div
               key={i}
               variants={staggerItemVariants}
-              className="text-center"
+              className="relative text-center"
             >
+              {/* Champagne divider between stats on desktop */}
+              {i > 0 && (
+                <div className="absolute top-1/2 left-0 hidden h-12 w-[1px] -translate-y-1/2 bg-champagne/15 lg:block" />
+              )}
+
               <div className="font-heading text-4xl font-bold text-white lg:text-5xl">
                 {stat.isYear ? (
                   <span>{stat.value}</span>
@@ -42,7 +43,7 @@ export default function StatsSection() {
                   />
                 )}
               </div>
-              <p className="mt-2 text-sm tracking-wider uppercase text-neutral-200/60">
+              <p className="mt-2 text-sm tracking-wider uppercase text-champagne/60">
                 {stat.label}
               </p>
             </motion.div>

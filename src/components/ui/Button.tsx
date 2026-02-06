@@ -49,20 +49,21 @@ export default function Button({
   };
 
   const baseStyles =
-    "relative inline-flex items-center justify-center font-body font-semibold tracking-wide transition-all duration-300 rounded-sm cursor-pointer";
+    "relative inline-flex items-center justify-center font-body font-medium tracking-[0.15em] uppercase transition-all duration-500 rounded-sm cursor-pointer";
 
   const variants = {
     primary:
-      "bg-gradient-to-r from-magenta to-accent text-white hover:opacity-90 hover:shadow-lg hover:shadow-accent/25",
-    secondary: "bg-primary text-white hover:bg-primary-light",
+      "bg-primary text-champagne border border-champagne/30 hover:bg-champagne hover:text-primary hover:border-champagne hover:shadow-lg hover:shadow-magenta/15",
+    secondary:
+      "bg-transparent text-neutral-900 border border-neutral-300 hover:border-champagne hover:text-champagne transition-all duration-500",
     outline:
-      "border-2 border-accent text-accent hover:bg-accent hover:text-white",
+      "border border-neutral-200 text-neutral-200 hover:border-magenta hover:text-champagne transition-all duration-500",
   };
 
   const sizes = {
-    sm: "px-5 py-2.5 text-sm",
-    md: "px-7 py-3 text-[15px]",
-    lg: "px-9 py-4 text-base",
+    sm: "px-5 py-2.5 text-[12px]",
+    md: "px-7 py-3 text-[13px]",
+    lg: "px-9 py-4 text-[13px]",
   };
 
   const combinedClassName = cn(

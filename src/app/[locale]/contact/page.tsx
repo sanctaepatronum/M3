@@ -46,9 +46,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative flex min-h-[50vh] items-center overflow-hidden bg-primary">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light/20 to-primary" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-magenta)_0%,_transparent_60%)] opacity-[0.06]" />
+      <section className="relative flex min-h-[50vh] items-center overflow-hidden bg-mesh-dark">
         <Container className="relative z-10 py-32 text-center">
           <TextReveal
             text={t("hero.title")}
@@ -63,7 +61,7 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      <SectionDivider variant="curve" from="fill-primary" to="fill-neutral-50" />
+      <SectionDivider />
 
       {/* Contact Content */}
       <section className="bg-neutral-50 py-24 lg:py-32">
@@ -77,9 +75,9 @@ export default function ContactPage() {
                     key="success"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="flex flex-col items-center justify-center rounded-sm border border-sage/20 bg-sage/5 p-12 text-center"
+                    className="flex flex-col items-center justify-center rounded-sm border border-accent/20 bg-accent/5 p-12 text-center"
                   >
-                    <CheckCircle size={48} className="text-sage" />
+                    <CheckCircle size={48} className="text-accent" />
                     <p className="mt-4 text-lg font-medium text-neutral-900">
                       {t("form.success")}
                     </p>
@@ -95,7 +93,7 @@ export default function ContactPage() {
                       <input
                         {...register("name")}
                         placeholder={t("form.name")}
-                        className="w-full border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-accent"
+                        className="w-full border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-champagne"
                       />
                       {errors.name && (
                         <p className="mt-1 text-sm text-error">
@@ -110,7 +108,7 @@ export default function ContactPage() {
                         {...register("email")}
                         type="email"
                         placeholder={t("form.email")}
-                        className="w-full border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-accent"
+                        className="w-full border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-champagne"
                       />
                       {errors.email && (
                         <p className="mt-1 text-sm text-error">
@@ -125,7 +123,7 @@ export default function ContactPage() {
                         {...register("phone")}
                         type="tel"
                         placeholder={t("form.phone")}
-                        className="w-full border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-accent"
+                        className="w-full border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-champagne"
                       />
                     </div>
 
@@ -134,7 +132,7 @@ export default function ContactPage() {
                       <select
                         {...register("subject")}
                         defaultValue=""
-                        className="w-full border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 transition-colors focus:border-accent"
+                        className="w-full border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 transition-colors focus:border-champagne"
                       >
                         <option value="" disabled>
                           {t("form.subject")}
@@ -168,7 +166,7 @@ export default function ContactPage() {
                         {...register("message")}
                         rows={5}
                         placeholder={t("form.message")}
-                        className="w-full resize-none border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-accent"
+                        className="w-full resize-none border-b-2 border-neutral-200 bg-transparent py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-champagne"
                       />
                       {errors.message && (
                         <p className="mt-1 text-sm text-error">
@@ -181,7 +179,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full rounded-sm bg-gradient-to-r from-magenta to-accent py-4 text-[15px] font-semibold text-white transition-all hover:opacity-90 hover:shadow-lg hover:shadow-accent/25 disabled:opacity-50"
+                      className="w-full rounded-sm bg-primary py-4 text-[15px] font-semibold tracking-[0.1em] uppercase text-champagne border border-champagne/30 transition-all hover:bg-champagne hover:text-primary hover:shadow-lg hover:shadow-magenta/15 disabled:opacity-50"
                     >
                       {isSubmitting ? "..." : t("form.submit")}
                     </button>
@@ -196,12 +194,12 @@ export default function ContactPage() {
                 <h2 className="font-heading text-2xl font-bold text-neutral-900">
                   {t("info.heading")}
                 </h2>
-                <div className="h-[3px] w-16 bg-gradient-to-r from-magenta to-accent" />
+                <div className="h-px w-16 bg-gradient-to-r from-champagne to-transparent" />
 
                 <div className="space-y-6">
                   {/* Address */}
                   <div className="flex items-start gap-4">
-                    <div className="mt-1 rounded-sm bg-accent/10 p-2.5 text-accent">
+                    <div className="mt-1 rounded-sm bg-champagne/10 p-2.5 text-champagne">
                       <MapPin size={20} />
                     </div>
                     <div>
@@ -219,7 +217,7 @@ export default function ContactPage() {
 
                   {/* Phone */}
                   <div className="flex items-start gap-4">
-                    <div className="mt-1 rounded-sm bg-accent/10 p-2.5 text-accent">
+                    <div className="mt-1 rounded-sm bg-champagne/10 p-2.5 text-champagne">
                       <Phone size={20} />
                     </div>
                     <div>
@@ -231,7 +229,7 @@ export default function ContactPage() {
                           <a
                             key={phone}
                             href={`tel:${phone.replace(/\s/g, "")}`}
-                            className="block text-neutral-400 transition-colors hover:text-accent"
+                            className="block text-neutral-400 transition-colors hover:text-champagne"
                           >
                             {phone}
                           </a>
@@ -242,7 +240,7 @@ export default function ContactPage() {
 
                   {/* Email */}
                   <div className="flex items-start gap-4">
-                    <div className="mt-1 rounded-sm bg-accent/10 p-2.5 text-accent">
+                    <div className="mt-1 rounded-sm bg-champagne/10 p-2.5 text-champagne">
                       <Mail size={20} />
                     </div>
                     <div>
@@ -254,7 +252,7 @@ export default function ContactPage() {
                           <a
                             key={email}
                             href={`mailto:${email}`}
-                            className="block text-neutral-400 transition-colors hover:text-accent"
+                            className="block text-neutral-400 transition-colors hover:text-champagne"
                           >
                             {email}
                           </a>
@@ -265,7 +263,7 @@ export default function ContactPage() {
 
                   {/* Hours */}
                   <div className="flex items-start gap-4">
-                    <div className="mt-1 rounded-sm bg-accent/10 p-2.5 text-accent">
+                    <div className="mt-1 rounded-sm bg-champagne/10 p-2.5 text-champagne">
                       <Clock size={20} />
                     </div>
                     <div>
@@ -279,8 +277,20 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Map placeholder */}
-                <div className="mt-8 aspect-[4/3] rounded-sm bg-neutral-200/50" />
+                {/* Google Maps Embed */}
+                <div className="mt-8 aspect-[4/3] overflow-hidden rounded-sm">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15889.76!2d-3.9800!3d5.3600!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eb4e2b10bb0b%3A0x5c2e9a6b1e5f6a0a!2sCocody-Riviera%20III%2C%20Abidjan%2C%20C%C3%B4te%20d&#39;Ivoire!5e0!3m2!1sfr!2sci!4v1700000000000"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="M3 Consultants — Cocody-Riviera III, Abidjan"
+                    className="h-full w-full grayscale transition-all duration-500 hover:grayscale-0"
+                  />
+                </div>
               </div>
             </SlideIn>
           </div>
