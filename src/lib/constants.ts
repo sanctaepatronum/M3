@@ -17,6 +17,6 @@ export const NAV_LINKS = [
   { key: "about", href: "/about" },
   { key: "services", href: "/services" },
   { key: "team", href: "/team" },
-  { key: "blog", href: "/blog" },
+  // { key: "blog", href: "/blog" }, // feature-flagged off
   { key: "contact", href: "/contact" },
 ] as const;

@@ -57,16 +57,16 @@
   }
 
   @keyframes grain {
-    0%, 100% { transform: translate(0, 0); }
-    10% { transform: translate(-5%, -10%); }
-    20% { transform: translate(-15%, 5%); }
-    30% { transform: translate(7%, -25%); }
-    40% { transform: translate(-5%, 25%); }
-    50% { transform: translate(-15%, 10%); }
-    60% { transform: translate(15%, 0%); }
-    70% { transform: translate(0%, 15%); }
-    80% { transform: translate(3%, 35%); }
-    90% { transform: translate(-10%, 10%); }
+    0%, 100% { opacity: 0.035; }
+    10% { opacity: 0.025; }
+    20% { opacity: 0.04; }
+    30% { opacity: 0.03; }
+    40% { opacity: 0.045; }
+    50% { opacity: 0.02; }
+    60% { opacity: 0.035; }
+    70% { opacity: 0.04; }
+    80% { opacity: 0.025; }
+    90% { opacity: 0.035; }
   }
 
   @keyframes shimmer {
@@ -76,7 +76,7 @@
 
   --animate-fade-in-up: fade-in-up 0.6s var(--ease-out-expo) both;
   --animate-bounce-gentle: bounce-gentle 2s ease-in-out infinite;
-  --animate-grain: grain 8s steps(10) infinite;
+  --animate-grain: grain 6s ease-in-out infinite;
   --animate-shimmer: shimmer 3s ease-in-out infinite;
 }
 
@@ -102,10 +102,9 @@ body {
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0.035;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-size: 256px 256px;
-  animation: var(--animate-grain);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 512px 512px;
+  animation: grain 6s ease-in-out infinite;
 }
 
 /* ── Atmospheric Mesh Backgrounds ─────────────────────────── */

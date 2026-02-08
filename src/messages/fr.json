@@ -16,7 +16,12 @@
       "title": "Nous avons les solutions RH",
       "subtitle": "Cabinet spécialisé basé à Abidjan, nous accompagnons les entreprises dans leur stratégie de développement du capital humain.",
       "cta_primary": "Nos Services",
-      "cta_secondary": "Contactez-nous"
+      "cta_secondary": "Contactez-nous",
+      "badge_label": "Abidjan",
+      "badge_text": "Conseil RH & Recrutement",
+      "micro_1": "Expertise Locale",
+      "micro_2": "Portée Internationale",
+      "micro_3": "Excellence RH"
     },
     "philosophy": {
       "quote": "La perfection n'est pas atteignable, mais si nous poursuivons la perfection, nous pouvons atteindre l'Excellence.",
@@ -210,6 +215,7 @@
     },
     "experts": {
       "title": "Réseau d'Experts",
+      "subtitle": "Un réseau, une force",
       "description": "M3 Consultants s'appuie sur un réseau d'experts spécialisés et de cabinets partenaires pour répondre aux missions de grande envergure avec la plus haute qualité de service."
     }
   },

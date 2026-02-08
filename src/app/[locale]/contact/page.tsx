@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, CheckCircle } from "lucide-react";
 import Container from "@/components/ui/Container";
@@ -13,20 +12,12 @@ import FadeIn from "@/components/animations/FadeIn";
 import SlideIn from "@/components/animations/SlideIn";
 import SectionDivider from "@/components/ui/SectionDivider";
 import { SITE_CONFIG } from "@/lib/constants";
-
-const contactSchema = z.object({
-  name: z.string().min(2),
-  email: z.string().email(),
-  phone: z.string().optional(),
-  subject: z.string().min(1),
-  message: z.string().min(10),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
+import { contactSchema, type ContactFormData } from "@/lib/schemas/contact";
 
 export default function ContactPage() {
   const t = useTranslations("contact");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const {
     register,
@@ -37,10 +28,22 @@ export default function ContactPage() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log("Form submitted:", data);
-    setIsSubmitted(true);
+    setErrorMessage(null);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send");
+      }
+
+      setIsSubmitted(true);
+    } catch {
+      setErrorMessage(t("form.error"));
+    }
   };
 
   return (
@@ -174,6 +177,10 @@ export default function ContactPage() {
                         </p>
                       )}
                     </div>
+
+                    {errorMessage && (
+                      <p className="text-sm text-error">{errorMessage}</p>
+                    )}
 
                     {/* Submit */}
                     <button

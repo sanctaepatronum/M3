@@ -25,6 +25,25 @@ const serviceKeys = [
 ] as const;
 const serviceIcons = [Users, Search, GraduationCap, Shield];
 
+const serviceImages: Record<string, { src: string; alt: string }> = {
+  hr_consulting: {
+    src: "/images/services/hr-consulting.jpg",
+    alt: "Strategic HR consulting — professionals reviewing business analytics",
+  },
+  recruitment: {
+    src: "/images/services/recruitment.jpg",
+    alt: "Talent recruitment — professionals shaking hands in modern office",
+  },
+  training: {
+    src: "/images/services/training.jpg",
+    alt: "Professional training — strategy whiteboard with business frameworks",
+  },
+  ip_consulting: {
+    src: "/images/services/ip-consulting.jpg",
+    alt: "Intellectual property consulting — M3 Consultants branded portfolio",
+  },
+};
+
 export default function ServicesPage() {
   const t = useTranslations("services");
 
@@ -53,7 +72,7 @@ export default function ServicesPage() {
         const isEven = i % 2 === 0;
         const bgClass = isEven ? "bg-neutral-50" : "bg-neutral-100";
         return (
-          <section key={key} className={`${bgClass} py-20 lg:py-28`}>
+          <section key={key} id={key.replace("_", "-")} className={`${bgClass} py-20 lg:py-28 scroll-mt-20`}>
             <Container>
               <div
                 className={`grid items-center gap-12 lg:grid-cols-2 lg:gap-20 ${
@@ -84,7 +103,16 @@ export default function ServicesPage() {
                   delay={0.2}
                 >
                   <div className={`relative ${!isEven ? "lg:[direction:ltr]" : ""}`}>
-                    <div className="aspect-[4/3] rounded-sm bg-neutral-200/50" />
+                    {serviceImages[key] ? (
+                      <img
+                        src={serviceImages[key].src}
+                        alt={serviceImages[key].alt}
+                        className="aspect-[4/3] w-full rounded-sm object-cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="aspect-[4/3] rounded-sm bg-neutral-200/50" />
+                    )}
                     <div className="absolute -bottom-4 -right-4 h-full w-full rounded-sm border-2 border-champagne/10" />
                   </div>
                 </SlideIn>

@@ -55,7 +55,7 @@ export default function ServicesOverview() {
                 </p>
 
                 <Link
-                  href="/services"
+                  href={`/services#${service.key.replace("_", "-")}`}
                   className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-champagne transition-colors hover:text-magenta"
                 >
                   {t("learn_more")}

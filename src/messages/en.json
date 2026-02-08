@@ -16,7 +16,12 @@
       "title": "We have the HR solutions",
       "subtitle": "A specialized firm based in Abidjan, we support companies in their human capital development strategy.",
       "cta_primary": "Our Services",
-      "cta_secondary": "Contact Us"
+      "cta_secondary": "Contact Us",
+      "badge_label": "Abidjan",
+      "badge_text": "HR Consulting & Recruitment",
+      "micro_1": "Local Expertise",
+      "micro_2": "International Reach",
+      "micro_3": "HR Excellence"
     },
     "philosophy": {
       "quote": "Perfection is not attainable, but if we chase perfection, we can catch Excellence.",
@@ -210,6 +215,7 @@
     },
     "experts": {
       "title": "Expert Network",
+      "subtitle": "One network, one strength",
       "description": "M3 Consultants relies on a network of specialized experts and partner firms to handle large-scale missions with the highest quality of service."
     }
   },

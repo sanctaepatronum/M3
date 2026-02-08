@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { createElement } from "react";
 
 interface ContainerProps {
   children: React.ReactNode;
@@ -11,9 +12,9 @@ export default function Container({
   className,
   as: Component = "div",
 }: ContainerProps) {
-  return (
-    <Component className={cn("mx-auto max-w-7xl px-6 lg:px-8", className)}>
-      {children}
-    </Component>
+  return createElement(
+    Component,
+    { className: cn("mx-auto max-w-7xl px-6 lg:px-8", className) },
+    children
   );
 }
