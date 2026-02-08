@@ -1,19 +1,18 @@
 "use client";
 
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import {
-  Users,
-  Search,
-  GraduationCap,
-  Shield,
-  ChevronDown,
-} from "lucide-react";
+  motion,
+  useScroll,
+  useTransform,
+  useInView,
+  useReducedMotion,
+} from "framer-motion";
+import { Users, Search, GraduationCap, Shield } from "lucide-react";
 import Container from "@/components/ui/Container";
 import TextReveal from "@/components/animations/TextReveal";
 import FadeIn from "@/components/animations/FadeIn";
-import SlideIn from "@/components/animations/SlideIn";
 import SectionDivider from "@/components/ui/SectionDivider";
 import Button from "@/components/ui/Button";
 
@@ -44,6 +43,18 @@ const serviceImages: Record<string, { src: string; alt: string }> = {
   },
 };
 
+const detailItemVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+    },
+  },
+};
+
 export default function ServicesPage() {
   const t = useTranslations("services");
 
@@ -67,60 +78,10 @@ export default function ServicesPage() {
 
       <SectionDivider />
 
-      {/* Service Detail Sections */}
-      {serviceKeys.map((key, i) => {
-        const isEven = i % 2 === 0;
-        const bgClass = isEven ? "bg-neutral-50" : "bg-neutral-100";
-        return (
-          <section key={key} id={key.replace("_", "-")} className={`${bgClass} py-20 lg:py-28 scroll-mt-20`}>
-            <Container>
-              <div
-                className={`grid items-center gap-12 lg:grid-cols-2 lg:gap-20 ${
-                  !isEven ? "lg:[direction:rtl]" : ""
-                }`}
-              >
-                {/* Content Side */}
-                <SlideIn from={isEven ? "left" : "right"}>
-                  <div className={!isEven ? "lg:[direction:ltr]" : ""}>
-                    <span className="font-heading text-6xl font-bold text-champagne/15">
-                      {t(`${key}.number`)}
-                    </span>
-                    <h2 className="mt-2 font-heading text-3xl font-bold text-neutral-900">
-                      {t(`${key}.title`)}
-                    </h2>
-                    <div className="mt-3 h-px w-16 bg-gradient-to-r from-champagne to-transparent" />
-                    <p className="mt-6 text-lg leading-relaxed text-neutral-700">
-                      {t(`${key}.description`)}
-                    </p>
-
-                    <ServiceSubList serviceKey={key} />
-                  </div>
-                </SlideIn>
-
-                {/* Visual Side */}
-                <SlideIn
-                  from={isEven ? "right" : "left"}
-                  delay={0.2}
-                >
-                  <div className={`relative ${!isEven ? "lg:[direction:ltr]" : ""}`}>
-                    {serviceImages[key] ? (
-                      <img
-                        src={serviceImages[key].src}
-                        alt={serviceImages[key].alt}
-                        className="aspect-[4/3] w-full rounded-sm object-cover"
-                        loading="lazy"
-                      />
-                    ) : (
-                      <div className="aspect-[4/3] rounded-sm bg-neutral-200/50" />
-                    )}
-                    <div className="absolute -bottom-4 -right-4 h-full w-full rounded-sm border-2 border-champagne/10" />
-                  </div>
-                </SlideIn>
-              </div>
-            </Container>
-          </section>
-        );
-      })}
+      {/* Service Sections — Sticky Scroll */}
+      {serviceKeys.map((key, i) => (
+        <StickyServiceSection key={key} serviceKey={key} index={i} />
+      ))}
 
       {/* CTA Section */}
       <section className="bg-neutral-100 py-24 lg:py-32">
@@ -144,50 +105,149 @@ export default function ServicesPage() {
   );
 }
 
-function ServiceSubList({
+/* ── Sticky Service Section ── */
+function StickyServiceSection({
   serviceKey,
+  index,
 }: {
   serviceKey: (typeof serviceKeys)[number];
+  index: number;
 }) {
   const t = useTranslations("services");
-  const [isOpen, setIsOpen] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+  const prefersReducedMotion = useReducedMotion();
+  const isEven = index % 2 === 0;
+  const bgClass = isEven ? "bg-neutral-50" : "bg-neutral-100";
 
-  const subServices: string[] = t.raw(`${serviceKey}.sub_services`);
+  const subServices: { title: string; description: string }[] = t.raw(
+    `${serviceKey}.sub_services`
+  );
+
+  // Track scroll progress through this section for fade-in/out
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+
+  const sectionOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.1, 0.85, 1],
+    [0, 1, 1, 0]
+  );
+
+  const sectionOpacityStatic = prefersReducedMotion ? 1 : undefined;
 
   return (
-    <div className="mt-6">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex items-center gap-2 text-sm font-medium text-champagne transition-colors hover:text-magenta"
+    <section
+      ref={sectionRef}
+      id={serviceKey.replace("_", "-")}
+      className={`${bgClass} relative scroll-mt-20`}
+    >
+      <motion.div
+        style={{ opacity: sectionOpacityStatic ?? sectionOpacity }}
       >
-        {isOpen ? "Masquer les détails" : "Voir les détails"}
-        <motion.span
-          animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          <ChevronDown size={16} />
-        </motion.span>
-      </button>
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.ul
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden"
+        <Container className="py-16 lg:py-24">
+          <div
+            className={`grid items-start gap-12 lg:grid-cols-2 lg:gap-20 ${
+              !isEven ? "lg:[direction:rtl]" : ""
+            }`}
           >
-            <div className="mt-4 space-y-2 border-l-2 border-champagne/20 pl-4">
-              {subServices.map((item: string, j: number) => (
-                <li key={j} className="text-sm text-neutral-400">
-                  {item}
-                </li>
+            {/* ── Sticky side: Image + Title + Description ── */}
+            <div
+              className={`lg:sticky lg:top-24 ${
+                !isEven ? "lg:[direction:ltr]" : ""
+              }`}
+            >
+              <div className="relative">
+                {serviceImages[serviceKey] ? (
+                  <img
+                    src={serviceImages[serviceKey].src}
+                    alt={serviceImages[serviceKey].alt}
+                    className="aspect-[4/3] w-full rounded-sm object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="aspect-[4/3] rounded-sm bg-neutral-200/50" />
+                )}
+                <div className="absolute -bottom-4 -right-4 h-full w-full rounded-sm border-2 border-champagne/10 pointer-events-none" />
+              </div>
+
+              <div className="mt-8">
+                <span className="font-heading text-6xl font-bold text-champagne/15">
+                  {t(`${serviceKey}.number`)}
+                </span>
+                <h2 className="mt-2 font-heading text-3xl font-bold text-neutral-900">
+                  {t(`${serviceKey}.title`)}
+                </h2>
+                <div className="mt-3 h-px w-16 bg-gradient-to-r from-champagne to-transparent" />
+                <p className="mt-6 text-lg leading-relaxed text-neutral-700">
+                  {t(`${serviceKey}.description`)}
+                </p>
+              </div>
+            </div>
+
+            {/* ── Scrolling side: Detail Cards ── */}
+            <div
+              className={`space-y-5 ${!isEven ? "lg:[direction:ltr]" : ""}`}
+            >
+              {subServices.map((item, j) => (
+                <DetailCard
+                  key={j}
+                  title={item.title}
+                  description={item.description}
+                  index={j}
+                />
               ))}
             </div>
-          </motion.ul>
-        )}
-      </AnimatePresence>
-    </div>
+          </div>
+        </Container>
+      </motion.div>
+    </section>
+  );
+}
+
+/* ── Detail Card with scroll-triggered animation ── */
+function DetailCard({
+  title,
+  description,
+  index,
+}: {
+  title: string;
+  description: string;
+  index: number;
+}) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const prefersReducedMotion = useReducedMotion();
+
+  if (prefersReducedMotion) {
+    return (
+      <div className="rounded-lg border border-neutral-200/60 bg-white/80 p-6 shadow-sm backdrop-blur-sm">
+        <p className="font-heading text-sm font-semibold text-neutral-900">
+          {title}
+        </p>
+        <p className="mt-2 text-sm leading-relaxed text-neutral-500">
+          {description}
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      className="rounded-lg border border-neutral-200/60 bg-white/80 p-6 shadow-sm backdrop-blur-sm"
+      variants={detailItemVariants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      transition={{ delay: index * 0.05 }}
+    >
+      <p className="font-heading text-sm font-semibold text-neutral-900">
+        {title}
+      </p>
+      <p className="mt-2 text-sm leading-relaxed text-neutral-500">
+        {description}
+      </p>
+    </motion.div>
   );
 }

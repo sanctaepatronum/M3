@@ -69,9 +69,15 @@
     },
     "story": {
       "heading": "Notre Histoire",
-      "paragraph1": "Fondé en 2021, M3 Consultants est né de la vision de professionnels chevronnés issus de grandes entreprises internationales, déterminés à offrir un accompagnement de qualité supérieure en matière de ressources humaines.",
-      "paragraph2": "Basés à Abidjan, nous intervenons auprès d'organisations de toutes tailles en Côte d'Ivoire et dans la sous-région, avec une expertise opérationnelle et un engagement envers la confidentialité absolue.",
-      "paragraph3": "Notre approche allie rigueur méthodologique et compréhension approfondie des réalités locales pour garantir des résultats durables et mesurables."
+      "paragraph1": "A l'issue d'une riche carrière, dans les grandes entreprises internationales installées en Côte d'Ivoire, nous avons décidé de créer le Cabinet M3-CONSULTANTS, qui a démarré ses activités en 2021, pour être à votre écoute, cerner vos besoins et y apporter la solution optimale.",
+      "paragraph2": "Tel est notre engagement pour vous servir au mieux de la législation en vigueur, des connaissances et pratiques actuelles et de bonne gouvernance établie.",
+      "paragraph3": "Les autres intervenants du Cabinet sont des experts-praticiens ayant de nombreuses années d'expériences opérationnelles et avérées à leur actif, dans leur domaine de compétence. Certains d'entre eux ont activement participé à l'élaboration des textes législatifs et règlementaires et des grilles de rémunérations conventionnelles minimales actuellement en vigueur en matière sociale. Aussi, qui mieux que nous connaitraient l'esprit de ces textes et pourraient vous les partager ou les appliquer aux préoccupations qui sont les vôtres ?",
+      "paragraph4": "C'est cette somme d'expérience qui est mise à votre disposition pour vous conseiller, vous former et vous accompagner dans la gestion opérationnelle et stratégique de vos préoccupations et activités.",
+      "paragraph5": "Soucieux de développer des solutions socialement responsables, nos propositions tiennent toujours compte à maintenir un climat apaisé et productif dans vos entreprises; et en toute confidentialité*.",
+      "paragraph6": "Nous sommes certains que vous n'aurez qu'à vous féliciter de notre collaboration.",
+      "signature_name": "Dr MAR Mao",
+      "signature_title": "Associé-Gérant",
+      "footnote": "*Nous nous interdisons de révéler l'identité de nos clients ; même à titre de références. Toutefois, nous certifions avoir une grande expérience, multidimensionnelle, dans nos domaines de compétences."
     },
     "values": {
       "heading": "Nos Valeurs",
@@ -122,12 +128,16 @@
       "title": "Conseil en Ressources Humaines",
       "description": "Nous accompagnons les entreprises dans l'élaboration et la mise en œuvre de stratégies RH performantes, alignées sur leurs objectifs de croissance.",
       "sub_services": [
-        "Audit et diagnostic RH",
-        "Élaboration de politiques RH",
-        "Gestion de la performance",
-        "Accompagnement au changement",
-        "Rémunération et avantages sociaux",
-        "Relations sociales et dialogue social"
+        { "title": "Stratégie RH", "description": "Élaboration d'une stratégie de ressources humaines alignée sur les objectifs globaux de l'entreprise, comprenant la planification de la main-d'œuvre, la gestion des talents et l'optimisation des structures organisationnelles." },
+        { "title": "Recrutement et Sélection", "description": "Aide à l'attraction, à la sélection et à l'embauche des meilleurs talents, y compris l'élaboration de descriptions de poste, la gestion des processus de recrutement et l'intégration des nouveaux employés." },
+        { "title": "Formation et Développement", "description": "Conception et mise en œuvre de programmes de formation et de développement pour améliorer les compétences des employés, la gestion du leadership et le développement de carrière." },
+        { "title": "Gestion des Performances", "description": "Établissement de systèmes d'évaluation des performances pour mesurer l'efficacité des employés, fixer des objectifs et fournir des feedbacks constructifs." },
+        { "title": "Rémunération et Avantages Sociaux", "description": "Développement de structures de rémunération compétitives et de programmes d'avantages sociaux pour attirer et retenir les talents." },
+        { "title": "Relations de Travail", "description": "Conseil sur les meilleures pratiques en matière de relations avec les employés, gestion des conflits, négociation collective et conformité légale." },
+        { "title": "Gestion des Talents", "description": "Identification, développement et rétention des talents clés au sein de l'organisation, y compris la planification de la relève et la gestion des carrières." },
+        { "title": "Diversité et Inclusion", "description": "Élaboration de stratégies pour promouvoir un environnement de travail inclusif et diversifié, en tenant compte des différentes cultures, genres et origines." },
+        { "title": "Gestion du Changement", "description": "Accompagnement des organisations dans les processus de changement, tels que les restructurations, les fusions et acquisitions, en assurant une communication efficace et en gérant les aspects humains du changement." },
+        { "title": "Audit et Conformité RH", "description": "Réalisation d'audits des pratiques et politiques RH pour s'assurer de la conformité avec les lois et réglementations en vigueur et identifier les domaines d'amélioration." }
       ]
     },
     "recruitment": {
@@ -135,12 +145,14 @@
       "title": "Recrutement",
       "description": "Notre approche rigoureuse du recrutement garantit l'identification et la sélection des talents qui correspondent parfaitement à vos besoins.",
       "sub_services": [
-        "Sourcing et chasse de têtes",
-        "Présélection et évaluation",
-        "Entretiens structurés",
-        "Tests psychométriques",
-        "Vérification des références",
-        "Intégration des nouveaux collaborateurs"
+        { "title": "Analyse des besoins", "description": "Définition des compétences, expériences et qualifications requises pour le poste à pourvoir." },
+        { "title": "Sourcing", "description": "Identification et attraction de candidats potentiels par divers canaux, tels que les réseaux sociaux professionnels, les bases de données de candidats, les salons de l'emploi, etc." },
+        { "title": "Présélection", "description": "Évaluation des candidatures reçues pour sélectionner celles qui correspondent le mieux aux critères du poste." },
+        { "title": "Entretiens", "description": "Organisation et conduite d'entretiens pour évaluer les compétences, l'expérience et la motivation des candidats." },
+        { "title": "Tests et évaluations", "description": "Mise en place de tests psychométriques, techniques ou de personnalité pour évaluer les aptitudes des candidats." },
+        { "title": "Vérification des références", "description": "Contrôle des antécédents professionnels et académiques des candidats sélectionnés." },
+        { "title": "Aide à la décision", "description": "Fourniture de conseils et d'analyses pour aider l'entreprise à choisir le candidat le plus approprié." },
+        { "title": "Intégration", "description": "Accompagnement de l'organisation dans le processus d'intégration du nouvel employé pour assurer une transition en douceur." }
       ]
     },
     "training": {
@@ -148,12 +160,13 @@
       "title": "Formation Professionnelle",
       "description": "Des programmes de formation sur mesure pour développer les compétences de vos équipes et accompagner leur montée en puissance.",
       "sub_services": [
-        "Leadership et management",
-        "Développement personnel",
-        "Compétences techniques",
-        "Communication et soft skills",
-        "Gestion de projet",
-        "Coaching individuel et collectif"
+        { "title": "Analyse des besoins de formation", "description": "Identification des points d'amélioration, en termes de compétences et de connaissances au sein de l'organisation." },
+        { "title": "Conception de programmes de formation", "description": "Création de modules de formation sur mesure adaptés aux besoins spécifiques de l'entreprise et à ses objectifs stratégiques." },
+        { "title": "Mise en œuvre de la formation", "description": "Organisation et animation de sessions de formation, qu'elles soient en présentiel, en ligne ou hybrides." },
+        { "title": "Développement du leadership", "description": "Programmes visant à renforcer les compétences de leadership et de gestion des cadres et des responsables d'équipe." },
+        { "title": "Formation en soft skills", "description": "Cours axés sur le développement des compétences interpersonnelles, telles que la communication, la gestion du temps, la résolution de conflits, etc." },
+        { "title": "Suivi et évaluation", "description": "Mesure de l'efficacité des programmes de formation par des évaluations avant et après, ainsi que des feedbacks des participants." },
+        { "title": "Plans de développement individuel", "description": "Création de plans personnalisés pour le développement professionnel des employés, en tenant compte de leurs objectifs de carrière et des besoins de l'entreprise." }
       ]
     },
     "ip_consulting": {
@@ -161,12 +174,16 @@
       "title": "Propriété Intellectuelle",
       "description": "Une expertise spécialisée pour protéger et valoriser vos actifs immatériels dans un environnement réglementaire en constante évolution.",
       "sub_services": [
-        "Évaluation d'actifs intellectuels",
-        "Dépôt de brevets et marques",
-        "Stratégie de protection PI",
-        "Accompagnement en contentieux",
-        "Veille réglementaire",
-        "Conseil en propriété industrielle"
+        { "title": "Évaluation de la PI", "description": "Analyse de l'ensemble des actifs immatériels de l'entreprise pour évaluer leur valeur, leur état de protection et leur potentiel commercial." },
+        { "title": "Stratégie de PI", "description": "Développement d'une stratégie de propriété intellectuelle alignée sur les objectifs commerciaux de l'entreprise, en tenant compte des risques et des opportunités du marché." },
+        { "title": "Dépôt et Enregistrement", "description": "Assistance dans la préparation et le dépôt de demandes de brevets, de marques, de modèles et de droits d'auteur, ainsi que dans la gestion des procédures d'enregistrement auprès des offices de propriété intellectuelle nationaux et internationaux." },
+        { "title": "Gestion de Portefeuille de PI", "description": "Suivi et gestion des actifs de PI existants, y compris le renouvellement des enregistrements, la surveillance des échéances et la gestion des licences." },
+        { "title": "Recherche et Veille", "description": "Réalisation de recherches d'antériorité, d'analyses de brevetabilité, de surveillances de marques et d'études de liberté d'exploitation pour évaluer les risques de contrefaçon et d'infraction." },
+        { "title": "Défense et Contentieux", "description": "Conseil et représentation dans les procédures de litige en matière de PI, y compris les oppositions, les actions en contrefaçon et les négociations de règlement." },
+        { "title": "Accords et Licences", "description": "Rédaction et négociation d'accords de confidentialité, de transfert de technologie, de licences de PI et d'autres contrats liés à la propriété intellectuelle." },
+        { "title": "Audit de PI", "description": "Réalisation d'audits de propriété intellectuelle pour identifier les risques et les opportunités liés à la PI dans le cadre de fusions, acquisitions, investissements ou autres transactions commerciales." },
+        { "title": "Formation et Sensibilisation", "description": "Organisation de sessions de formation pour sensibiliser les employés à l'importance de la PI et les former à la gestion des actifs immatériels." },
+        { "title": "Conseil en Stratégie de Monétisation", "description": "Aide à l'identification des opportunités de monétisation de la PI, y compris la commercialisation de brevets, le licensing et les partenariats stratégiques." }
       ]
     },
     "cta": {

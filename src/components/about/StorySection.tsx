@@ -109,13 +109,31 @@ export default function StorySection() {
                 <p>{t("paragraph1")}</p>
                 <p>{t("paragraph2")}</p>
                 <p>{t("paragraph3")}</p>
+                <p>{t("paragraph4")}</p>
+                <p>{t("paragraph5")}</p>
+                <p className="font-medium text-neutral-800">{t("paragraph6")}</p>
               </div>
+
+              {/* Signature */}
+              <div className="mt-10 border-t border-neutral-200 pt-6">
+                <p className="font-heading text-lg font-semibold text-neutral-900">
+                  {t("signature_name")}
+                </p>
+                <p className="text-sm tracking-wide text-champagne">
+                  {t("signature_title")}
+                </p>
+              </div>
+
+              {/* Footnote */}
+              <p className="mt-8 text-sm leading-relaxed text-neutral-500 italic">
+                {t("footnote")}
+              </p>
             </div>
           </SlideIn>
 
           {/* Right: Video */}
           <FadeIn delay={0.3}>
-            <div className="group/video relative">
+            <div className="group/video relative mt-[8rem]">
               <video
                 ref={videoRef}
                 src="/videos/about-story.mp4"

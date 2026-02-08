@@ -69,9 +69,15 @@
     },
     "story": {
       "heading": "Our Story",
-      "paragraph1": "Founded in 2021, M3 Consultants was born from the vision of seasoned professionals from major international corporations, determined to offer superior quality support in human resources.",
-      "paragraph2": "Based in Abidjan, we work with organizations of all sizes in Côte d'Ivoire and the sub-region, with operational expertise and a commitment to absolute confidentiality.",
-      "paragraph3": "Our approach combines methodological rigor with a deep understanding of local realities to guarantee lasting and measurable results."
+      "paragraph1": "After a rich career in major international companies established in Côte d'Ivoire, we decided to create M3-CONSULTANTS, which began its activities in 2021, to listen to you, identify your needs and provide the optimal solution.",
+      "paragraph2": "This is our commitment to serve you in the best compliance with current legislation, knowledge, practices, and established good governance.",
+      "paragraph3": "The other members of the Firm are expert practitioners with many years of proven operational experience in their area of expertise. Some of them have actively participated in the development of legislative and regulatory texts and the minimum conventional salary scales currently in force in social matters. So, who better than us would know the spirit of these texts and could share them with you or apply them to your concerns?",
+      "paragraph4": "It is this wealth of experience that is placed at your disposal to advise you, train you and support you in the operational and strategic management of your concerns and activities.",
+      "paragraph5": "Committed to developing socially responsible solutions, our proposals always take into account maintaining a peaceful and productive climate in your companies; and in complete confidentiality*.",
+      "paragraph6": "We are certain that you will be delighted with our collaboration.",
+      "signature_name": "Dr MAR Mao",
+      "signature_title": "Managing Partner",
+      "footnote": "*We refrain from revealing the identity of our clients, even as references. However, we certify that we have extensive, multidimensional experience in our areas of expertise."
     },
     "values": {
       "heading": "Our Values",
@@ -122,12 +128,16 @@
       "title": "Human Resources Consulting",
       "description": "We support companies in developing and implementing high-performing HR strategies aligned with their growth objectives.",
       "sub_services": [
-        "HR audit and diagnosis",
-        "HR policy development",
-        "Performance management",
-        "Change management support",
-        "Compensation and benefits",
-        "Social relations and dialogue"
+        { "title": "HR Strategy", "description": "Development of a human resources strategy aligned with the company's overall objectives, including workforce planning, talent management and organizational structure optimization." },
+        { "title": "Recruitment and Selection", "description": "Assistance in attracting, selecting and hiring top talent, including job description development, recruitment process management and new employee onboarding." },
+        { "title": "Training and Development", "description": "Design and implementation of training and development programs to enhance employee skills, leadership management and career development." },
+        { "title": "Performance Management", "description": "Establishment of performance evaluation systems to measure employee effectiveness, set objectives and provide constructive feedback." },
+        { "title": "Compensation and Benefits", "description": "Development of competitive compensation structures and benefits programs to attract and retain talent." },
+        { "title": "Labor Relations", "description": "Advice on best practices in employee relations, conflict management, collective bargaining and legal compliance." },
+        { "title": "Talent Management", "description": "Identification, development and retention of key talent within the organization, including succession planning and career management." },
+        { "title": "Diversity and Inclusion", "description": "Development of strategies to promote an inclusive and diverse work environment, taking into account different cultures, genders and backgrounds." },
+        { "title": "Change Management", "description": "Supporting organizations through change processes, such as restructuring, mergers and acquisitions, ensuring effective communication and managing the human aspects of change." },
+        { "title": "HR Audit and Compliance", "description": "Conducting audits of HR practices and policies to ensure compliance with current laws and regulations and identify areas for improvement." }
       ]
     },
     "recruitment": {
@@ -135,12 +145,14 @@
       "title": "Recruitment",
       "description": "Our rigorous approach to recruitment ensures the identification and selection of talent that perfectly matches your needs.",
       "sub_services": [
-        "Sourcing and headhunting",
-        "Pre-screening and assessment",
-        "Structured interviews",
-        "Psychometric testing",
-        "Reference verification",
-        "New employee onboarding"
+        { "title": "Needs Analysis", "description": "Defining the skills, experience and qualifications required for the position to be filled." },
+        { "title": "Sourcing", "description": "Identifying and attracting potential candidates through various channels, such as professional social networks, candidate databases, job fairs, etc." },
+        { "title": "Pre-screening", "description": "Evaluating applications received to select those that best match the position criteria." },
+        { "title": "Interviews", "description": "Organizing and conducting interviews to assess candidates' skills, experience and motivation." },
+        { "title": "Tests and Assessments", "description": "Implementing psychometric, technical or personality tests to evaluate candidates' aptitudes." },
+        { "title": "Reference Verification", "description": "Checking the professional and academic backgrounds of selected candidates." },
+        { "title": "Decision Support", "description": "Providing advice and analysis to help the company choose the most appropriate candidate." },
+        { "title": "Onboarding", "description": "Supporting the organization in the onboarding process of the new employee to ensure a smooth transition." }
       ]
     },
     "training": {
@@ -148,12 +160,13 @@
       "title": "Professional Training",
       "description": "Custom training programs to develop your teams' skills and support their growth.",
       "sub_services": [
-        "Leadership and management",
-        "Personal development",
-        "Technical skills",
-        "Communication and soft skills",
-        "Project management",
-        "Individual and group coaching"
+        { "title": "Training Needs Analysis", "description": "Identifying areas for improvement in terms of skills and knowledge within the organization." },
+        { "title": "Training Program Design", "description": "Creating custom training modules tailored to the company's specific needs and strategic objectives." },
+        { "title": "Training Delivery", "description": "Organizing and facilitating training sessions, whether in-person, online or hybrid." },
+        { "title": "Leadership Development", "description": "Programs aimed at strengthening leadership and management skills for executives and team leaders." },
+        { "title": "Soft Skills Training", "description": "Courses focused on developing interpersonal skills, such as communication, time management, conflict resolution, etc." },
+        { "title": "Monitoring and Evaluation", "description": "Measuring the effectiveness of training programs through pre- and post-assessments, as well as participant feedback." },
+        { "title": "Individual Development Plans", "description": "Creating personalized plans for employee professional development, taking into account their career goals and business needs." }
       ]
     },
     "ip_consulting": {
@@ -161,12 +174,16 @@
       "title": "Intellectual Property",
       "description": "Specialized expertise to protect and enhance your intangible assets in an ever-changing regulatory environment.",
       "sub_services": [
-        "Intellectual asset valuation",
-        "Patent and trademark filing",
-        "IP protection strategy",
-        "Litigation support",
-        "Regulatory monitoring",
-        "Industrial property consulting"
+        { "title": "IP Valuation", "description": "Analysis of all intangible assets of the company to assess their value, protection status and commercial potential." },
+        { "title": "IP Strategy", "description": "Development of an intellectual property strategy aligned with the company's business objectives, taking into account market risks and opportunities." },
+        { "title": "Filing and Registration", "description": "Assistance in preparing and filing patent, trademark, design and copyright applications, as well as managing registration procedures with national and international IP offices." },
+        { "title": "IP Portfolio Management", "description": "Monitoring and managing existing IP assets, including registration renewals, deadline monitoring and license management." },
+        { "title": "Research and Monitoring", "description": "Conducting prior art searches, patentability analyses, trademark monitoring and freedom-to-operate studies to assess counterfeiting and infringement risks." },
+        { "title": "Defense and Litigation", "description": "Advice and representation in IP litigation proceedings, including oppositions, counterfeiting actions and settlement negotiations." },
+        { "title": "Agreements and Licenses", "description": "Drafting and negotiating confidentiality agreements, technology transfers, IP licenses and other intellectual property-related contracts." },
+        { "title": "IP Audit", "description": "Conducting intellectual property audits to identify IP-related risks and opportunities in the context of mergers, acquisitions, investments or other business transactions." },
+        { "title": "Training and Awareness", "description": "Organizing training sessions to raise employee awareness of the importance of IP and train them in managing intangible assets." },
+        { "title": "Monetization Strategy", "description": "Helping identify IP monetization opportunities, including patent commercialization, licensing and strategic partnerships." }
       ]
     },
     "cta": {
