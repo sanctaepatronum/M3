@@ -3,8 +3,6 @@ import { Resend } from "resend";
 import { contactSchema } from "@/lib/schemas/contact";
 import { SITE_CONFIG } from "@/lib/constants";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const SUBJECT_LABELS: Record<string, string> = {
   hr: "Conseil RH",
   recruitment: "Recrutement",
@@ -15,6 +13,7 @@ const SUBJECT_LABELS: Record<string, string> = {
 
 export async function POST(request: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await request.json();
     const result = contactSchema.safeParse(body);
 
