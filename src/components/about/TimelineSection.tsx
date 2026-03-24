@@ -38,6 +38,7 @@ export default function TimelineSection() {
               <TimelineEntry
                 key={year}
                 year={year}
+                label={t(`${year}.label`)}
                 title={t(`${year}.title`)}
                 description={t(`${year}.description`)}
                 isLeft={i % 2 === 0}
@@ -52,13 +53,13 @@ export default function TimelineSection() {
 }
 
 function TimelineEntry({
-  year,
+  label,
   title,
   description,
   isLeft,
   index,
 }: {
-  year: string;
+  label: string;
   title: string;
   description: string;
   isLeft: boolean;
@@ -92,7 +93,7 @@ function TimelineEntry({
         }`}
       >
         <span className="font-heading text-3xl font-bold text-champagne">
-          {year}
+          {label}
         </span>
         <h3 className="mt-1 font-heading text-xl font-semibold text-neutral-900">
           {title}

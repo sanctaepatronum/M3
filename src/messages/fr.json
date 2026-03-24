@@ -101,18 +101,22 @@
     "timeline": {
       "heading": "Notre Parcours",
       "2021": {
+        "label": "2021",
         "title": "Fondation",
         "description": "Création de M3-Consultants à Abidjan, Côte d'Ivoire."
       },
       "2022": {
+        "label": "2022",
         "title": "Croissance",
         "description": "Extension de nos services et consolidation de notre réseau de partenaires."
       },
       "2023": {
+        "label": "2023",
         "title": "Expansion",
         "description": "Diversification de notre offre avec l'expertise en propriété intellectuelle."
       },
       "2024": {
+        "label": "2024 – Aujourd'hui",
         "title": "Rayonnement",
         "description": "Renforcement de notre présence dans la sous-région ouest-africaine."
       }
@@ -217,10 +221,10 @@
       "kader": {
         "name": "MAR Mamadou-Kader",
         "title": "Chef de Projet",
-        "bio": "Titulaire d'un BBA en Management des Technologies de l'Information (University of Houston) et d'un AA (Howard Community College), MAR Mamadou-Kader allie compétences technologiques et vision stratégique.",
+        "bio": "Titulaire d'un Masters en Management des Technologies de l'Information (University of Houston) avec une expérience en produit dans un cabinet MBB, MAR Mamadou-Kader allie compétences technologiques et vision stratégique.",
         "credentials": [
-          "BBA en Management IT — University of Houston",
-          "AA — Howard Community College"
+          "Masters en Management IT — University of Houston",
+          "Expérience produit dans un cabinet MBB"
         ],
         "expertise": [
           "Management IT",
