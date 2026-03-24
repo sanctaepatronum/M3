@@ -37,7 +37,6 @@ export default function TimelineSection() {
             {years.map((year, i) => (
               <TimelineEntry
                 key={year}
-                year={year}
                 label={t(`${year}.label`)}
                 title={t(`${year}.title`)}
                 description={t(`${year}.description`)}
