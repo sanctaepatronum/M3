@@ -13,7 +13,7 @@ export default function Logo({ className, light = true }: LogoProps) {
         src="/images/logo-m3.png"
         alt="M3-Consultants"
         className={cn(
-          "h-16 w-auto object-contain sm:h-20",
+          "h-20 w-auto object-contain sm:h-24",
           !light && "brightness-90"
         )}
       />

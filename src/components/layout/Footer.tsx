@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="mb-4">
-              <Logo light />
+              <Logo light className="[&_img]:h-28 [&_img]:sm:h-32" />
             </div>
             <p className="text-sm leading-relaxed text-neutral-400">
               {t("description")}
