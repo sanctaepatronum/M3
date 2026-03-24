@@ -39,7 +39,7 @@ const serviceImages: Record<string, { src: string; alt: string }> = {
   },
   ip_consulting: {
     src: "/images/services/ip-consulting.jpg",
-    alt: "Intellectual property consulting — M3 Consultants branded portfolio",
+    alt: "Intellectual property consulting — M3-Consultants branded portfolio",
   },
 };
 

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "M3 Consultants | Cabinet de Conseil en Ressources Humaines",
+    "title": "M3-Consultants | Cabinet de Conseil en Ressources Humaines",
     "description": "Cabinet de conseil en ressources humaines basé à Abidjan. Expertise en conseil RH, recrutement, formation professionnelle et propriété intellectuelle."
   },
   "nav": {
@@ -26,7 +26,7 @@
     "philosophy": {
       "quote": "La perfection n'est pas atteignable, mais si nous poursuivons la perfection, nous pouvons atteindre l'Excellence.",
       "attribution": "Vince Lombardi",
-      "description": "Chez M3 Consultants, l'excellence n'est pas un objectif — c'est notre standard quotidien."
+      "description": "Chez M3-Consultants, l'excellence n'est pas un objectif — c'est notre standard quotidien."
     },
     "services": {
       "heading": "Nos Domaines d'Expertise",
@@ -102,7 +102,7 @@
       "heading": "Notre Parcours",
       "2021": {
         "title": "Fondation",
-        "description": "Création de M3 Consultants à Abidjan, Côte d'Ivoire."
+        "description": "Création de M3-Consultants à Abidjan, Côte d'Ivoire."
       },
       "2022": {
         "title": "Croissance",
@@ -233,7 +233,7 @@
     "experts": {
       "title": "Réseau d'Experts",
       "subtitle": "Un réseau, une force",
-      "description": "M3 Consultants s'appuie sur un réseau d'experts spécialisés et de cabinets partenaires pour répondre aux missions de grande envergure avec la plus haute qualité de service."
+      "description": "M3-Consultants s'appuie sur un réseau d'experts spécialisés et de cabinets partenaires pour répondre aux missions de grande envergure avec la plus haute qualité de service."
     }
   },
   "blog": {
@@ -312,7 +312,7 @@
       "placeholder": "Votre email",
       "button": "S'abonner"
     },
-    "copyright": "© {year} M3 Consultants. Tous droits réservés."
+    "copyright": "© {year} M3-Consultants. Tous droits réservés."
   },
   "common": {
     "read_more": "Lire la suite",

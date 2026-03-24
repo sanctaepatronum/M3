@@ -3,7 +3,7 @@ import { dmSerif, outfit, cormorant } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "M3 Consultants",
+  title: "M3-Consultants",
   description: "Cabinet de conseil en ressources humaines",
 };
 

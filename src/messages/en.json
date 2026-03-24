@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "M3 Consultants | Human Resources Consulting Firm",
+    "title": "M3-Consultants | Human Resources Consulting Firm",
     "description": "Human resources consulting firm based in Abidjan. Expertise in HR consulting, recruitment, professional training, and intellectual property."
   },
   "nav": {
@@ -26,7 +26,7 @@
     "philosophy": {
       "quote": "Perfection is not attainable, but if we chase perfection, we can catch Excellence.",
       "attribution": "Vince Lombardi",
-      "description": "At M3 Consultants, excellence is not a goal — it is our daily standard."
+      "description": "At M3-Consultants, excellence is not a goal — it is our daily standard."
     },
     "services": {
       "heading": "Our Areas of Expertise",
@@ -102,7 +102,7 @@
       "heading": "Our Journey",
       "2021": {
         "title": "Foundation",
-        "description": "Creation of M3 Consultants in Abidjan, Côte d'Ivoire."
+        "description": "Creation of M3-Consultants in Abidjan, Côte d'Ivoire."
       },
       "2022": {
         "title": "Growth",
@@ -233,7 +233,7 @@
     "experts": {
       "title": "Expert Network",
       "subtitle": "One network, one strength",
-      "description": "M3 Consultants relies on a network of specialized experts and partner firms to handle large-scale missions with the highest quality of service."
+      "description": "M3-Consultants relies on a network of specialized experts and partner firms to handle large-scale missions with the highest quality of service."
     }
   },
   "blog": {
@@ -312,7 +312,7 @@
       "placeholder": "Your email",
       "button": "Subscribe"
     },
-    "copyright": "© {year} M3 Consultants. All rights reserved."
+    "copyright": "© {year} M3-Consultants. All rights reserved."
   },
   "common": {
     "read_more": "Read more",

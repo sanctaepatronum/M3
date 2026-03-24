@@ -294,7 +294,7 @@ export default function ContactPage() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="M3 Consultants — Cocody-Riviera III, Abidjan"
+                    title="M3-Consultants — Cocody-Riviera III, Abidjan"
                     className="h-full w-full grayscale transition-all duration-500 hover:grayscale-0"
                   />
                 </div>

@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props) {
       title: t("title"),
       description: t("description"),
       url: "https://m3-consultants.net",
-      siteName: "M3 Consultants",
+      siteName: "M3-Consultants",
       locale: locale === "fr" ? "fr_CI" : "en_US",
       type: "website",
     },

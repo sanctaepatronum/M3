@@ -11,9 +11,9 @@ export default function Logo({ className, light = true }: LogoProps) {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/images/logo-m3.png"
-        alt="M3 Consultants"
+        alt="M3-Consultants"
         className={cn(
-          "h-12 w-auto object-contain sm:h-14",
+          "h-16 w-auto object-contain sm:h-20",
           !light && "brightness-90"
         )}
       />

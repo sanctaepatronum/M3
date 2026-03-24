@@ -21,7 +21,7 @@ export default function PhilosophySection() {
             <div className="relative">
               <img
                 src="/images/about/philosophy.jpg"
-                alt="M3 Consultants — Excellence"
+                alt="M3-Consultants — Excellence"
                 className="aspect-[3/4] w-full rounded-sm object-cover object-[70%_center]"
                 loading="lazy"
               />

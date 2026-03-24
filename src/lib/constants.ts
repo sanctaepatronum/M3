@@ -1,5 +1,5 @@
 export const SITE_CONFIG = {
-  name: "M3 Consultants",
+  name: "M3-Consultants",
   url: "https://m3-consultants.net",
   address: {
     street: "Cocody-Riviera III",
